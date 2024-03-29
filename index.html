@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Júlio Siqueira</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#sobre">Sobre Mim</a>
+    <a href="#habilidades">Habilidade</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contact">Contato</a>
+</div>
+
+<div class="main">
+
+    <img class="foto" src="imagens/minha-foto2.png" width="200px"><br>
+    <h1 id="sobre">Sobre Mim</h1>
+    <div class="paragrafo">
+        <p>Olá, meu nome é Júlio Siqueira. Sou estudante de Análise e Desenvolvimento de Sistemas e estou apaixonado por tecnologia. Desde jovem, sempre tive interesse em entender como as coisas funcionam, e essa curiosidade me levou ao mundo da programação.</p>
+        <p>Atualmente, estou focado em aprimorar minhas habilidades de desenvolvimento de software, aprendendo novas linguagens de programação, frameworks e conceitos de design. Estou sempre em busca de novos desafios e oportunidades de aprendizado.</p>
+        <p>Além dos meus estudos, também sou entusiasta de projetos de código aberto e estou envolvido em comunidades online onde posso compartilhar conhecimento e colaborar com outros desenvolvedores.</p>
+        <p>Fora do mundo da tecnologia, gosto de passar meu tempo livre praticando esportes ao ar livre, lendo livros sobre ficção científica e explorando novas tecnologias e tendências do setor.</p>
+    </div>
+
+    <hr>
+<section id="skills">
+    <h1 id="habilidades">Minhas Habilidades</h1>
+    <div class="habilidades">
+        <img class="icon" src="imagens/html-icon.png" width="100px">
+        <img class="icon" src="imagens/css-icon.png" width="100px">
+        <img class="icon" src="imagens/javascript.png" width="100px">
+        <img class="icon" src="imagens/python-icon.png" width="100px">
+    </div>
+</section>
+
+<hr>
+
+
+</div>
+<section class="projetos">
+    <h1 id="projetos">Meus Projetos</h1>
+    <div class="item">
+        <h4>TRILHA HTML - DIO.ME</h4>
+        <p>Projeto de um site básico</p>
+        <p>Conceitos básicos Utilizados:</p>
+    <ul>
+        <li>Formulários</li>
+        <li>Estruturação e formatação de texto</li>
+        <li>Mídias</li>
+        <li>Tabelas</li>
+    </ul>
+        <p>Confira o <a href="https://github.com/siqueirago/trilha-html-modulo-2">projeto</a></p>
+
+    </div>
+
+    <div class="item" draggable="true">
+           <h4>IA GENERATIVA: NATURAL OU FAKE NATY</h4>
+           <p>Utizando IA Generativa para a criação de conteúdos digitais</p>
+           <p>Tecnologias Utilizadas:</p>
+        <ul>
+          <li>IA Generativa ChatGPT</li>
+          <li>IA Generativa Vidnoz IA</li>
+          <li>GitHub</li>
+          <li>Aplictivo para edição de texto</li>
+    </ul>
+        <p>Confira o <a href="https://github.com/siqueirago/lab-natty-or-not">projeto</a>.</p>
+
+    </div>
+
+</section>
+
+<section id="contact">
+    <h1>Contato</h1>
+    <p>Entre em contato comigo:</p>
+    <p>Email: <a href="mailto:siqueiragomes123@gmail.com">siqueiragomes123@gmail.com</a></p>
+    <p>Telefone: (85) 98130-4584</p>
+</section>
+
+<div class="footer">
+    <p>© 2024 Júlio Siqueira</p>
+</div>
+
+<script>
+  const target = document.getElementById("item");
+/* dragenter event fired on the drop target */
+target.addEventListener(
+  "dragenter",
+  (event) => {
+    // prevent default to allow drop
+    event.preventDefault();
+  },
+  false,
+);
+</script>
+
+</body>
+</html>
+
