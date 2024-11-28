@@ -1,106 +1,192 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Júlio Siqueira</title>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- FIM -->
+    <!-- BOOTSTRAP ICOND -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu Portifolio</title>
 </head>
+
 <body>
-
-<div class="navbar">
-    <a href="#sobre">Sobre Mim</a>
-    <a href="#habilidades">Habilidade</a>
-    <a href="#projetos">Projetos</a>
-    <a href="#contact">Contato</a>
-</div>
-
-<div class="main">
-
-    <img class="foto" src="imagens/minha-foto2.png" width="200px"><br>
-    <h1 id="sobre">Sobre Mim</h1>
-    <div class="paragrafo">
-        <p>Olá, meu nome é Júlio Siqueira. Sou estudante de Análise e Desenvolvimento de Sistemas e estou apaixonado por tecnologia. Desde jovem, sempre tive interesse em entender como as coisas funcionam, e essa curiosidade me levou ao mundo da programação.</p>
-        <p>Atualmente, estou focado em aprimorar minhas habilidades de desenvolvimento de software, aprendendo novas linguagens de programação, frameworks e conceitos de design. Estou sempre em busca de novos desafios e oportunidades de aprendizado.</p>
-        <p>Além dos meus estudos, também sou entusiasta de projetos de código aberto e estou envolvido em comunidades online onde posso compartilhar conhecimento e colaborar com outros desenvolvedores.</p>
-        <p>Fora do mundo da tecnologia, gosto de passar meu tempo livre praticando esportes ao ar livre, lendo livros sobre ficção científica e explorando novas tecnologias e tendências do setor.</p>
-    </div>
-
-    <hr>
-<section id="skills">
-    <h1 id="habilidades">Minhas Habilidades</h1>
-    <div class="habilidades">
-        <img class="icon" src="imagens/html-icon.png" width="100px">
-        <img class="icon" src="imagens/css-icon.png" width="100px">
-        <img class="icon" src="imagens/javascript.png" width="100px">
-        <img class="icon" src="imagens/python-icon.png" width="100px">
-        
-        
-
-    </div>
-</section>
-
-<hr>
-
-
-</div>
-<section class="projetos">
-    <h1 id="projetos">Meus Projetos</h1>
-    <div class="item">
-        <h4>TRILHA HTML - DIO.ME</h4>
-        <p>Projeto de um site básico</p>
-        <p>Conceitos básicos Utilizados:</p>
-    <ul>
-        <li>Formulários</li>
-        <li>Estruturação e formatação de texto</li>
-        <li>Mídias</li>
-        <li>Tabelas</li>
-    </ul>
-        <p>Confira o <a href="https://github.com/siqueirago/trilha-html-modulo-2">projeto</a></p>
-
-    </div>
-
-    <div class="item" draggable="true">
-           <h4>IA GENERATIVA: NATURAL OU FAKE NATY</h4>
-           <p>Utizando IA Generativa para a criação de conteúdos digitais</p>
-           <p>Tecnologias Utilizadas:</p>
-        <ul>
-          <li>IA Generativa ChatGPT</li>
-          <li>IA Generativa Vidnoz IA</li>
-          <li>GitHub</li>
-          <li>Aplictivo para edição de texto</li>
-    </ul>
-        <p>Confira o <a href="https://github.com/siqueirago/lab-natty-or-not">projeto</a>.</p>
-
-    </div>
-
-</section>
-
-<section id="contact">
-    <h1>Contato</h1>
-    <p>Entre em contato comigo:</p>
-    <p>Email: <a href="mailto:siqueiragomes123@gmail.com">siqueiragomes123@gmail.com</a></p>
-    <p>Telefone: (85) 98130-4584</p>
-</section>
-
-<div class="footer">
-    <p>© 2024 Júlio Siqueira</p>
-</div>
-
-<script>
-  const target = document.getElementById("item");
-/* dragenter event fired on the drop target */
-target.addEventListener(
-  "dragenter",
-  (event) => {
-    // prevent default to allow drop
-    event.preventDefault();
-  },
-  false,
-);
-</script>
-
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img class="img-logo" src="images/logomarca2.png" alt="Meu logo" width="60">
+                </a>
+            </div> <!--logo-->
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Experincias</a></li>
+                </ul>
+            </nav>
+            <div class="btn-contato">
+                <a href="#">
+                    <button>Contato</button>
+                </a>
+            </div>
+            </di> <!--interface-->
+    </header>
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1 class>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span></h1>
+                        <p>Com uma formação em Análise e Desenvolvimento de Sistemas, desenvolvi habilidades técnicas em
+                            Python,
+                            HTML, CSS, SQL, Java, Análise de Dados e Inteligência Artificial.
+                            Acredito que a combinação de criatividade, competência e confiança é essencial para criar
+                            projetos
+                            inovadores e eficientes. Estou em busca de oportunidades para crescer profissionalmente,
+                            seja por meio
+                            de estágios, freelances ou posições efetivas, com o objetivo de consolidar minha carreira na
+                            área de TI.</p>
+                        <div class="btn-contato">
+                            <a href="#">
+                                <button>Entre em Contato</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img-topo-site">
+                        <img src="images/minha-foto2.png" alt="" width="300">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="especialidades">
+            <div class="interface">
+                <h2 class="titulo"><span> MINHAS ESPECIALIDADES.</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-code-square"></i>
+                        <H3>Webesite</H3>
+                        <p>Experiência em projetos de Universitário e forte habilidade em Analises de Dados.
+                            Busco desafios em um ambiente colaborativo e em constante evolução.</p>
+                    </div><!--especialidade-box-->
+                    <div class="especialidades-box">
+                        <i class="bi bi-cart"></i>
+                        <H3>Loja</H3>
+                        <p>Experiência em projetos de Universitário e forte habilidade em Analises de Dados.
+                            Busco desafios em um ambiente colaborativo e em constante evolução.</p>
+                    </div><!--especialidade-box-->
+                    <div class="especialidades-box">
+                        <i class="bi bi-filetype-html"></i>
+                        <H3>Blog</H3>
+                        <p>Experiência em projetos de Universitário e forte habilidade em Analises de Dados.
+                            Busco desafios em um ambiente colaborativo e em constante evolução.</p>
+                    </div><!--especialidade-box-->
+                </div><!--flex-->
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-code-square"></i>
+                        <H3>Webesite</H3>
+                        <p>Experiência em projetos de Universitário e forte habilidade em Analises de Dados.
+                            Busco desafios em um ambiente colaborativo e em constante evolução.</p>
+                    </div><!--especialidade-box-->
+                    <div class="especialidades-box">
+                        <i class="bi bi-cart"></i>
+                        <H3>Loja</H3>
+                        <p>Experiência em projetos de Universitário e forte habilidade em Analises de Dados.
+                            Busco desafios em um ambiente colaborativo e em constante evolução.</p>
+                    </div><!--especialidade-box-->
+                    <div class="especialidades-box">
+                        <i class="bi bi-filetype-html"></i>
+                        <H3>Blog</H3>
+                        <p>Experiência em projetos de Universitário e forte habilidade em Analises de Dados.
+                            Busco desafios em um ambiente colaborativo e em constante evolução.</p>
+                    </div><!--especialidade-box-->
+                </div><!--flex-->
+            </div>
+        </section><!--especialidade-->
+        <section class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="images/minha-foto.jpg" alt="" width="300">
+                    </div><!--img-sobre-->
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <span>SOU JULIO SIQUEIRA.</span></h2>
+                        <p>Desenvolvedor Full Stack apaixonado por criar soluções inovadoras.
+                            Com mais de 2 anos de experiência, possuo sólida base em Python e frameworks como Pandas.
+                            Experiência em projetos de Universitário e forte habilidade em Analises de Dados.
+                            Busco desafios em um ambiente colaborativo e em constante evolução.</p>
+                        <p>Desenvolvedor Full Stack apaixonado por criar soluções inovadoras.
+                            Com mais de 2 anos de experiência, possuo sólida base em Python e frameworks como Pandas.
+                            Experiência em projetos de Universitário e forte habilidade em Analises de Dados.
+                            Busco desafios em um ambiente colaborativo e em constante evolução.</p>
+                        <div class="btn-social">
+                            <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="#"><button><i class="bi bi-github"></i></button></a>
+                            <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
+                        </div><!--btn-social-->
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--Sobre-->
+        <section class="portfolio">
+            <div class="interface">
+                <h2 class="titulo">MEUS <span>PROJETOS</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(images/projeto1.jpg);">
+                        <div class="overlay">Formação Power BI</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(images/img1.jpg);">
+                        <div class="overlay">Formação Power BI Analyst da DIO</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(images/img1.jpg);">
+                        <div class="overlay">Projeto 3</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(images/img1.jpg);">
+                        <div class="overlay">Projeto 3</div>
+                    </div>
+            </div><!--interfacr-->
+        </section><!--portfolio-->
+        <section class="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu Nome completo:" required>
+                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
+                    <input type="text" name="" id="" placeholder="Seu celular:">
+                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form><!--formulario-->
+            </div><!--interface-->
+        </section><!--formulario-->
+    </main>
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <!-- <div class="logo-footer">
+                            <img class="img-logo" src="images/logomarca.webp" alt="" width="60px">
+                    </div>logo-footer -->
+                    <div class="btn-social">
+                        <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="#"><button><i class="bi bi-github"></i></button></a>
+                        <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
+                    </div><!--btn-social-->
+                </div><!--flex-->
+            </div><!--line-footer-->
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope"></i> <a
+                        href="mailto:siqueiragomes75@gmail.com">siqueiragomes75@gmail.com</a></p>
+            </div><!--line-footer-->
+        </div><!--interface-->
+    </footer>
 </body>
-</html>
-
+</html
