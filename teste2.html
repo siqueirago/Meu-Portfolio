@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seção Projetos</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #FFD700, #693e04, #361e01);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .projetos-section {
+      padding: 0;
+      overflow: hidden;
+      position: relative;
+      color: #fff;
+    }
+
+    .projetos-container {
+      display: flex;
+      gap: 20px;
+      overflow: hidden;
+      scroll-behavior: smooth;
+      
+    }
+
+    .projeto-box {
+      flex: 0 0 auto;
+      width: 350px;
+      background-color:rgb(255, 255, 255);
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0);
+      text-align: center;
+    }
+
+    .projeto-box img {
+      width: 90%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .projeto-box h3 {
+      margin: 10px 0;
+      font-size: 1.2rem;
+    }
+
+    .projeto-box p {
+      padding: 0 15px;
+      font-size: 0.9rem;
+      color: #000000;
+    }
+
+    .navegacao {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      z-index: 100;
+    }
+
+    .navegacao.anterior {
+      left: 10px;
+    }
+
+    .navegacao.proximo {
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <section class="projetos-section">
+    <h2>Projetos</h2>
+    <button class="navegacao anterior" id="anterior">⟨</button>
+    <div class="projetos-container" id="projetosContainer">
+      <div class="projeto-box">
+        <img src="images/Designer (15).png" alt="Projeto 1">
+        <h3>Projeto 1</h3>
+        <p>
+            Aqui está um exemplo de como criar uma seção de "Projetos" para um portfólio usando HTML e CSS. 
+            Essa seção permite a rolagem horizontal (da direita para a esquerda) e inclui boxes para fotos e 
+            descrições dos projetos.
+        </p>
+      </div>
+      <div class="projeto-box">
+        <img src="images/formação-engenharia-dados.png" alt="Projeto 2">
+        <h3>Projeto 2</h3>
+        <p>
+            Aqui está um exemplo de como criar uma seção de "Projetos" para um portfólio usando HTML e CSS. 
+            Essa seção permite a rolagem horizontal (da direita para a esquerda) e inclui boxes para fotos e 
+            descrições dos projetos.
+        </p>
+      </div>
+      <div class="projeto-box">
+        <img src="images/ia1.png" alt="Projeto 3">
+        <h3>Projeto 3</h3>
+        <p>
+            Aqui está um exemplo de como criar uma seção de "Projetos" para um portfólio usando HTML e CSS. 
+            Essa seção permite a rolagem horizontal (da direita para a esquerda) e inclui boxes para fotos e 
+            descrições dos projetos.
+        </p>
+      </div>
+      <div class="projeto-box">
+        <img src="images/Designer (14).png" alt="Projeto 3">
+        <h3>Projeto 3</h3>
+        <p>
+            Aqui está um exemplo de como criar uma seção de "Projetos" para um portfólio usando HTML e CSS. 
+            Essa seção permite a rolagem horizontal (da direita para a esquerda) e inclui boxes para fotos e 
+            descrições dos projetos.
+        </p>
+      </div>
+      <div class="projeto-box">
+        <img src="images/certificado-banco-de-dados.png" alt="Projeto 3">
+        <h3>Projeto 3</h3>
+        <p>
+            Aqui está um exemplo de como criar uma seção de "Projetos" para um portfólio usando HTML e CSS. 
+            Essa seção permite a rolagem horizontal (da direita para a esquerda) e inclui boxes para fotos e 
+            descrições dos projetos.
+        </p>
+      </div>
+      <div class="projeto-box">
+        <img src="images/certificado-banco-de-dados.png" alt="Projeto 3">
+        <h3>Projeto 3</h3>
+        <p>
+            Aqui está um exemplo de como criar uma seção de "Projetos" para um portfólio usando HTML e CSS. 
+            Essa seção permite a rolagem horizontal (da direita para a esquerda) e inclui boxes para fotos e 
+            descrições dos projetos.
+        </p>
+      </div>
+      <div class="projeto-box">
+        <img src="images/certificado-banco-de-dados.png" alt="Projeto 3">
+        <h3>Projeto 3</h3>
+        <p>
+            Aqui está um exemplo de como criar uma seção de "Projetos" para um portfólio usando HTML e CSS. 
+            Essa seção permite a rolagem horizontal (da direita para a esquerda) e inclui boxes para fotos e 
+            descrições dos projetos.
+        </p>
+      </div>
+      <!-- Adicione mais boxes de projetos conforme necessário -->
+    </div>
+    <button class="navegacao proximo" id="proximo">⟩</button>
+  </section>
+  <section class="projetos-section">
+    <h2>Projetos</h2>
+    <button class="navegacao anterior" id="anterior">⟨</button>
+    <div class="projetos-container" id="projetosContainer">
+      <div class="projeto-box">
+        <img src="images/certicidado-principios de desenvolvimento de software colaborativo.png" alt="Projeto 1">
+        <h3>Projeto 1</h3>
+        <p>
+            Aqui está um exemplo de como criar uma seção de "Projetos" para um portfólio usando HTML e CSS. 
+            Essa seção permite a rolagem horizontal (da direita para a esquerda) e inclui boxes para fotos e 
+            descrições dos projetos.
+        </p>
+      </div>
+      <div class="projeto-box">
+        <img src="images/certificado-analytics-storytelling-powerbi.png" alt="Projeto 2">
+        <h3>Projeto 2</h3>
+        <p>
+            Aqui está um exemplo de como criar uma seção de "Projetos" para um portfólio usando HTML e CSS. 
+            Essa seção permite a rolagem horizontal (da direita para a esquerda) e inclui boxes para fotos e 
+            descrições dos projetos.
+        </p>
+      </div>
+      <div class="projeto-box">
+        <img src="images/certificado-banco-de-dados.png" alt="Projeto 3">
+        <h3>Projeto 3</h3>
+        <p>
+            Aqui está um exemplo de como criar uma seção de "Projetos" para um portfólio usando HTML e CSS. 
+            Essa seção permite a rolagem horizontal (da direita para a esquerda) e inclui boxes para fotos e 
+            descrições dos projetos.
+        </p>
+      </div>
+      <div class="projeto-box">
+        <img src="images/certificado-banco-de-dados.png" alt="Projeto 3">
+        <h3>Projeto 3</h3>
+        <p>
+            Aqui está um exemplo de como criar uma seção de "Projetos" para um portfólio usando HTML e CSS. 
+            Essa seção permite a rolagem horizontal (da direita para a esquerda) e inclui boxes para fotos e 
+            descrições dos projetos.
+        </p>
+      </div>
+      <div class="projeto-box">
+        <img src="images/certificado-banco-de-dados.png" alt="Projeto 3">
+        <h3>Projeto 3</h3>
+        <p>
+            Aqui está um exemplo de como criar uma seção de "Projetos" para um portfólio usando HTML e CSS. 
+            Essa seção permite a rolagem horizontal (da direita para a esquerda) e inclui boxes para fotos e 
+            descrições dos projetos.
+        </p>
+      </div>
+      <div class="projeto-box">
+        <img src="images/certificado-banco-de-dados.png" alt="Projeto 3">
+        <h3>Projeto 3</h3>
+        <p>
+            Aqui está um exemplo de como criar uma seção de "Projetos" para um portfólio usando HTML e CSS. 
+            Essa seção permite a rolagem horizontal (da direita para a esquerda) e inclui boxes para fotos e 
+            descrições dos projetos.
+        </p>
+      </div>
+      <div class="projeto-box">
+        <img src="images/certificado-banco-de-dados.png" alt="Projeto 3">
+        <h3>Projeto 3</h3>
+        <p>
+            Aqui está um exemplo de como criar uma seção de "Projetos" para um portfólio usando HTML e CSS. 
+            Essa seção permite a rolagem horizontal (da direita para a esquerda) e inclui boxes para fotos e 
+            descrições dos projetos.
+        </p>
+      </div>
+      <!-- Adicione mais boxes de projetos conforme necessário -->
+    </div>
+    <button class="navegacao proximo" id="proximo">⟩</button>
+  </section>
+
+  <script>
+    const container = document.getElementById("projetosContainer");
+    const btnAnterior = document.getElementById("anterior");
+    const btnProximo = document.getElementById("proximo");
+
+    // Largura de cada projeto (incluindo gaps)
+    const scrollAmount = 320;
+
+    btnAnterior.addEventListener("click", () => {
+      container.scrollLeft -= scrollAmount; // Move para o projeto anterior
+    });
+
+    btnProximo.addEventListener("click", () => {
+      container.scrollLeft += scrollAmount; // Move para o próximo projeto
+    });
+  </script>
+</body>
+</html>
