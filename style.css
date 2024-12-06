@@ -206,6 +206,7 @@ section.especialidades .flex{
 
 section.sobre{
   padding: 80px 4%;
+  display: none;
 }
 
 section.sobre .flex{
@@ -260,7 +261,7 @@ section.portfolio .flex{
   gap: 60px;
 }
 .img-port{
-  width: 100%;
+  width: 500px;
   height: 300px;
   background-size: cover;
   background-position: 100% 0%;
