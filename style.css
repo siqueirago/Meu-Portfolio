@@ -6,12 +6,32 @@
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .titulo-logo{
   border-radius: 50%;
   color: orangered;
 } 
 body{
-  background-color: rgb(0, 0, 0); 
+  background-color: #000;
+  /* background-image: linear-gradient(45deg, #000408, #0f0f0e, #063df5, #4d7ee7);
+  background-size: 300% 300%;
+  animation: color 5s ease infinite; */
+}
+
+@keyframes color{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 0% 50%;
+
+  }
+  100%{
+    background-position: 0% 50%;
+  }
 }
 .interface{
   max-width: 1280px;
@@ -53,18 +73,13 @@ header > .interface{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 header a{
   color: #beb7b7;
   text-decoration: none;
   display: inline-block;
   transition: .3s;
-}
-
-header nav.menu-desktop a:hover{
-  color: #fff;
-  transform: scale(1.05) ;
-  
 }
 
 header nav ul {
@@ -80,11 +95,11 @@ header nav.menu-desktop ul li{
 .btn-abrir-menu i{
   color: orangered;
   font-size: 40px;
-  display: none;
+  display: block;
 }
 .menu-mobile{
   /* background-color: #000000b7; */
-  width: 50%;
+  width: 25%;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -95,7 +110,7 @@ header nav.menu-desktop ul li{
   transition: .5s;
 }
 .menu-mobile.abrir-menu{
-  width: 50%;
+  width: 25%;
 }
 
 .menu-mobile.abrir-menu ~ .overlay-menu{
@@ -107,14 +122,12 @@ header nav.menu-desktop ul li{
 .menu-mobile .btn-fechar i{
   color: orangered;
   font-size: 30px;
-
-
 }
 .menu-mobile nav ul{
   text-align: right;
 }
 .menu-mobile nav ul li a{
-  color: #fff;
+  color: orangered;
   font-size: 20px;
   font-weight: 300;
   padding: 20px 8%;
@@ -140,11 +153,12 @@ header nav.menu-desktop ul li{
 
 section.topo-do-site{
   padding: 40px 4%;
+  
 }
 section.topo-do-site .flex{
   align-items: center;
   justify-content: center;
-  gap: 90px;
+  gap: 100px;
 }
 .topo-do-site h1{
   color: #fff;
@@ -157,10 +171,13 @@ section.topo-do-site .flex{
 .topo-do-site .txt-topo-site p{
   color: #fff;
   margin: 40px 0;
+  text-align: justify;
 }
 .topo-do-site .img-topo-site img{
   position: relative;
   animation: flutuar 2s ease-in-out infinite alternate;
+  border-radius: 50%;
+  width: 500px;
 }
 @keyframes flutuar{
   0%{
@@ -173,7 +190,7 @@ section.topo-do-site .flex{
 /*ESTILOS DAS ESPECIALIDADES*/
 section.especialidades{
   padding: 60px 6%;
-  /* background-color: #fff; */
+
 }
 
 section.especialidades .flex{
@@ -182,7 +199,7 @@ section.especialidades .flex{
 
 .especialidades .especialidades-box{
   width: 30%;
-  color: #524e4e;
+  color: #fff;
   padding: 40px;
   border-radius: 20px;
   margin-top:45px ;
@@ -206,7 +223,7 @@ section.especialidades .flex{
 
 section.sobre{
   padding: 80px 4%;
-  display: none;
+  display: flex;
 }
 
 section.sobre .flex{
@@ -246,59 +263,85 @@ section.sobre .flex{
   margin: 0 10px;
   transition: .2s;
 }
-/* ESTILO DO PORTFOLIO */
+/* ESTILO DOS PROJETOS */
 
-section.portfolio{
-  background-color: #dadaf7d5;
-  padding: 80px 4%;
-  box-shadow: 0 0 40px 10px  #f8f6f618;
-  
-}
-
-section.portfolio .flex{
-  justify-content: space-around;
-  margin-top: 60px;
-  gap: 60px;
-}
-.img-port{
-  width: 500px;
-  height: 300px;
-  background-size: cover;
-  background-position: 100% 0%;
-  transition: 8s;
-  border-radius: 40px;
+.projetos-section {
+  /* background-color: orangered;  */
+  padding: 60px;
+  overflow: hidden;
   position: relative;
-}
-.img-port:hover{
-  background-position: 100% 100%; 
-}
-.txt-portfolio p {
-  text-align: justify;
   
 }
-.overlay{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: orangered;
-  border-radius: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  font-weight: 600;
-  color: #fff;
-  opacity: 0;
-  transition: 2s;
+.projetos-section h2{
+  padding: 30px;
+
 }
-.overlay:hover{
-  opacity: 1;
+.projetos-container {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  
+}
+
+.projeto-box {
+  flex: 0 0 auto;
+  width: 300px;
+  background-color: #36333388;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(236, 233, 233, 0.1);
+  text-align: center;
+}
+.projeto-box:hover{
+  border: solid 2px orangered;
+}
+
+.projeto-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.projeto-box h3 {
+  margin: 20px;
+  font-size: 1.2rem;
+  color: orangered;
+}
+
+.projeto-box p {
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #fff;
+  
+}
+.botoes-conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.navegacao {
+  
+  background-color: #000;
+  color: orangered;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.navegacao:hover {
+  background-color: orangered;
+  color: #fff;
 }
 /* ESTILO DO FORMULARIO DE CONTATO */
 section.formulario{
-  padding: 80px 4%;
+  padding: 50px 4%;
 }
 form{
   max-width: 500px;
@@ -361,6 +404,9 @@ footer .line-footer p i{
 footer .line-footer p a{
   color: #ffffff;
 }
+footer .logo-footer a{
+  text-decoration: none;
+}
 
 /* ----------------------------------------------------- */
 
@@ -377,10 +423,11 @@ footer .line-footer p a{
     font-size: 30px;
     
   }
+   /* MENU */
 
   /* CABEÇALHO */
   .menu-desktop, .btn-contato{
-    display: none;
+    display:none;
   }
   .btn-abrir-menu i{
     display: block;
@@ -389,15 +436,22 @@ footer .line-footer p a{
   /* TOPO DO SITE */
   .section.topo-do-site{
     padding: 20px 8%;
-    
+
+  }
+  .topo-do-site .img-topo-site img{
+    width: 200px;
   }
   .topo-do-site h1{
     font-size: 30px;
     text-align: center;
   }
+  .topo-do-site .txt-topo-site p{
+    text-align: center;
+  }
   
   .topo-do-site .img-topo-site{
     padding: 0 30px 40px;
+    
   }
   /* ESPECIALIDADES */
   .section.especialidades{
@@ -409,6 +463,7 @@ footer .line-footer p a{
   /* SOBRE */
   section.sobre{
     padding: 80px 8%;
+    gap: 20px;
   }
   .sobre .txt-sobre h2 {
     font-size: 34px;
@@ -418,19 +473,19 @@ footer .line-footer p a{
   .btn-social{
     text-align: center;
   }
-  /* PORTFOLIO */
-  section.portfolio{
+  /* PROJETOS */
+  .projetos-section{
     padding: 80px 8%;
-    
   }
-  .img-port{
-    width: 100%;
-    margin: 0 auto;
+  /* FOOTER */
+  
+  footer .logo-footer a{
+    text-align: center;
+    padding: 10px;
   }
-  section.portfolio .flex{
-    gap: 60px;
+  footer .line-footer p{
+    text-align: center;
   }
-
-
 }
+
   
